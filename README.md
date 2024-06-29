@@ -10,20 +10,21 @@ The goal of this project is to optimize a financial portfolio using PSO. PSO is 
 
 ## Features
 
-- Implementation of basic and advanced PSO variants.
+- Implementation of an advanced PSO.
 - Portfolio optimization with cardinality, budget, and holdings constraints.
 - Handling boundary and cardinality constraints using reflection strategy and proportional value adjustments.
+- Analysis and test on the results
 
 ## Dataset
 
-The experiments use data from S&P 500 (USA) from 2019-02-01 to 2024-02-01.
+The experiments use data from S&P 500 (USA) from 01-02-2014 to 31-12-2021: from 2014 to 2018 for train and compute efficient frontier and the pso, from 2019 to 2021 for testing.
 There is an automatic outlier returns remover in the script to get a more robust benchmark in efficient frontier calculation.
 
 ## Results
 
-This figure illustrates the performance comparison between the Efficient Frontier, Particle Swarm Optimization (PSO) results, and Basic PSO results for portfolio optimization.
+This figure illustrates the performance comparison between the Efficient Frontier and Particle Swarm Optimization (PSO) results for portfolio optimization.
 
-![Frontier](Frontier.png)
+![Portfolios](images/portfolios.png)
 
 - Efficient Frontier: The curve shows the theoretical boundary of optimal portfolios. Portfolios on the curve are considered efficient because they provide the maximum possible return for a given level of risk.
 
